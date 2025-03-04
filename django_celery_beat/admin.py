@@ -9,11 +9,11 @@ from django.forms.widgets import Select
 from django.template.defaultfilters import pluralize
 from django.utils.translation import gettext_lazy as _
 from django.utils.translation import ngettext_lazy
-from kombu.utils.json import loads
+from kombu.utils.json import loads 
 
 from .models import (ClockedSchedule, CrontabSchedule, IntervalSchedule,
                      PeriodicTask, PeriodicTasks, SolarSchedule)
-from .utils import is_database_scheduler
+from .utils import is_database_scheduler 
 
 
 class TaskSelectWidget(Select):
